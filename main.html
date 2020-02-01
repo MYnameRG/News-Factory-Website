@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<title>News Factory</title>
+</head>
+<body onload="fromLocalStorage()">
+    <nav class="navbar navbar-light bg-success">
+        <a class="navbar-brand mb-0 h1">NF News Factory</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search News" aria-label="Serach" id="search">
+            <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    <br />
+    <div class="jumbatron">
+        <div class="container">
+            <h1 class="display-4">Welcome To News Factory</h1>
+            <p class="lead">Comes with the latest breaking news back to back!!!</p>
+        </div>
+    </div>
+
+    <form>
+        <div class="container button">
+            <button type="button" class="btn btn-large btn-primary" id="find">Find News</button>
+            <button type="button" class="btn btn-large btn-primary" id="backup">Remove News</button>
+        </div>
+    </form>
+    <br>
+    <div class="container">
+        <div id="news"></div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
